@@ -59,6 +59,8 @@ public class Day10 {
 		Mobile mb=new Mobile();
 		System.out.println(mb.os.getName());
 		System.out.println(mb.os.getSize());
+		System.out.println(c.getBrand());
+		
 		mb.has_A(c);
 		
 		
