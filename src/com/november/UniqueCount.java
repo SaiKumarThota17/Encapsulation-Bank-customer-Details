@@ -2,13 +2,15 @@ package com.november;
 
 import java.util.Scanner;
 
-public class RemoveDuplicateValues {
+public class UniqueCount {
 	public static void uniqueCount(int[] ar) {
 		int count=1;
 		int uniqueCount=0;
 		for(int i=0;i<ar.length-1;i++) {
+			
 			if(ar[i]==ar[i+1]) {
 				count++;
+				
 			}
 			else {
 				if(count==1) {
@@ -22,8 +24,6 @@ public class RemoveDuplicateValues {
 		}
 		System.out.println(uniqueCount);
 	}
-
-
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		int input = sc.nextInt();
@@ -32,6 +32,7 @@ public class RemoveDuplicateValues {
 			ar[i] = sc.nextInt();
 		}
 		uniqueCount(ar);
+
 	}
 
 }
