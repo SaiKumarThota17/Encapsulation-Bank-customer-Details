@@ -1,6 +1,6 @@
 package com.polymorphism;
 
-class Plane {
+class Plane{
 
 	void fly() {
 		System.out.println("Fly flies on Sky");
@@ -8,29 +8,38 @@ class Plane {
 
 }
 
-class CargoPlane extends Plane {
+class CargoPlane extends Plane{
 
 	void fly() {
 		System.out.println("Fly flies on small range");
 
 	}
+	void code() {
+		System.out.println("CHild1");
+	}
 
 }
 
-class PassengerPane extends Plane {
+class PassengerPane extends Plane{
 
 	void fly() {
 		System.out.println("Fly flies on medium range");
 
 	}
+	void code() {
+		System.out.println("CHild2");
+	}
 
 }
 
-class FighterPlane extends Plane {
+class FighterPlane extends Plane{
 
 	void fly() {
 		System.out.println("Fly flies on High range");
 
+	}
+	void code() {
+		System.out.println("CHild3");
 	}
 }
 
@@ -45,10 +54,14 @@ public class Day01 {
 
 		ref = cp;
 		ref.fly();
+		((CargoPlane)(ref)).code();
 		ref = pp;
 		ref.fly();
+		((PassengerPane)(ref)).code();
 		ref = fp;
 		ref.fly();
+		((FighterPlane)(ref)).code();
+		
 
 	}
 
