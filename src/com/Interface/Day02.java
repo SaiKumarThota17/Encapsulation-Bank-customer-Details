@@ -1,47 +1,38 @@
 package com.Interface;
 
-interface Calculator{
-	
-	public void add();
-	public void sub();
-}
 
-class Calculator20 implements Calculator{
+interface Calculator10 {
+void add();
+void mul();
+
+}
+class MyCalculate implements Calculator10{
 	
 	@Override
 	public void add() {
+		System.out.println("First Menthod");
 		
-		System.out.println("Add Method");
 	}
 	@Override
-	public void sub() {
-	
-		System.out.println("sub Method");
-		
-	}
 	public void mul() {
-		System.out.println("mul Method");
+		System.out.println("mUL");
 		
 	}
+	void sub() {
+		System.out.println("Sub");
+	}
+	
+	
 }
-
-
-
-
-
-
-
-
-
 public class Day02 {
 
 	public static void main(String[] args) {
-		Calculator20 c1=new Calculator20();
-		Calculator ref;
-		ref=c1;
-		ref.add();
-		ref.sub();
-		((Calculator20)(ref)).mul();
+			MyCalculate mc=new MyCalculate();
+			
+			Calculator10 ref;
+			ref=mc;
+			ref.add();
+			ref.mul();
+			((MyCalculate)(ref)).sub();
 	}
-
 }

@@ -2,7 +2,7 @@ package com.abstractclass;
 
 import java.util.Scanner;
 
-class Square {
+class Square1 {
 
 	float side;
 	float area;
@@ -50,7 +50,7 @@ class Rectangle {
 	}
 }
 
-class Circle {
+class Circle1 {
 	float pi = 3.142f;
 	float radius;
 	float area;
@@ -76,7 +76,7 @@ class Circle {
 public class Day02 {
 
 	public static void main(String[] args) {
-		Square s1 = new Square();
+		Square1 s1 = new Square1();
 		s1.acceptInput();
 		s1.calcArea();
 		s1.dispArea();
@@ -85,7 +85,7 @@ public class Day02 {
 		r1.acceptInput();
 		r1.calcArea();
 		r1.dispArea();
-		Circle c1=new Circle();
+		Circle1 c1=new Circle1();
 		c1.acceptInput();
 		c1.calcArea();
 		c1.dispArea();
